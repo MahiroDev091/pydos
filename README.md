@@ -1,5 +1,4 @@
 # pydos
-Effective &amp; Powerful & Effective Dos pip package
 
 » One line installment:
 
